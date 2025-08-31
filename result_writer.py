@@ -4,22 +4,32 @@ import json
 RESULTS_DIR = "results"
 VALID_FILE = os.path.join(RESULTS_DIR, "valid.txt")
 INVALID_FILE = os.path.join(RESULTS_DIR, "invalid.txt")
+MOBILE_FILE = os.path.join(RESULTS_DIR, "mobile.txt")
+LANDLINE_FILE = os.path.join(RESULTS_DIR, "landline.txt")
 ALL_FILE = os.path.join(RESULTS_DIR, "all.json")
 
 
 def initialize_results():
-    """Prepare results folder and clear previous files."""
+    """Prepare results folder (does not clear files)."""
     os.makedirs(RESULTS_DIR, exist_ok=True)
-    for file_path in [VALID_FILE, INVALID_FILE, ALL_FILE]:
-        open(file_path, "w").close()
 
 
 def save_results_batch(results: list):
     """Save a batch of validation results to files."""
-    with open(VALID_FILE, "a") as vf, open(INVALID_FILE, "a") as inf:
+    with open(VALID_FILE, "a") as vf, open(INVALID_FILE, "a") as inf, \
+         open(MOBILE_FILE, "a") as mf, open(LANDLINE_FILE, "a") as lf:
+
         for result in results:
             if result.get("valid"):
                 vf.write(f"{result['phone_number']}\n")
+
+                # Save by line type
+                line_type = result.get("line_type", "").lower()
+                if line_type == "mobile":
+                    mf.write(f"{result['phone_number']}\n")
+                elif line_type == "landline":
+                    lf.write(f"{result['phone_number']}\n")
+
             else:
                 inf.write(f"{result['phone_number']}\n")
 
