@@ -3,8 +3,8 @@
         "phone_number": "+13524038533",
         "national_format": "(352) 403-8533",
         "country_code": "13",
-        "carrier": "Sprint",
-        "line_type": "landline",
+        "carrier": "T-Mobile",
+        "line_type": "mobile",
         "valid": true
     },
     {
@@ -14,15 +14,18 @@
     },
     {
         "phone_number": "+15704155859",
-        "valid": false,
-        "error": "Invalid number (mock)"
+        "national_format": "(570) 415-5859",
+        "country_code": "15",
+        "carrier": "T-Mobile",
+        "line_type": "landline",
+        "valid": true
     },
     {
         "phone_number": "+12073326033",
         "national_format": "(207) 332-6033",
         "country_code": "12",
-        "carrier": "Vodafone",
-        "line_type": "landline",
+        "carrier": "Sprint",
+        "line_type": "voip",
         "valid": true
     },
     {
@@ -37,60 +40,57 @@
         "phone_number": "+16082971368",
         "national_format": "(608) 297-1368",
         "country_code": "16",
-        "carrier": "Vodafone",
+        "carrier": "Sprint",
         "line_type": "voip",
         "valid": true
     },
     {
         "phone_number": "+13303123979",
-        "national_format": "(330) 312-3979",
-        "country_code": "13",
-        "carrier": "Verizon",
-        "line_type": "landline",
-        "valid": true
+        "valid": false,
+        "error": "Invalid number (mock)"
     },
     {
         "phone_number": "+12564266758",
-        "valid": false,
-        "error": "Invalid number (mock)"
+        "national_format": "(256) 426-6758",
+        "country_code": "12",
+        "carrier": "Vodafone",
+        "line_type": "landline",
+        "valid": true
     },
     {
         "phone_number": "+13378529710",
         "national_format": "(337) 852-9710",
         "country_code": "13",
         "carrier": "T-Mobile",
-        "line_type": "voip",
+        "line_type": "mobile",
         "valid": true
     },
     {
         "phone_number": "+16146493185",
         "national_format": "(614) 649-3185",
         "country_code": "16",
-        "carrier": "Sprint",
+        "carrier": "AT&T",
         "line_type": "landline",
         "valid": true
     },
     {
         "phone_number": "+15073982593",
-        "national_format": "(507) 398-2593",
-        "country_code": "15",
-        "carrier": "Verizon",
-        "line_type": "voip",
-        "valid": true
+        "valid": false,
+        "error": "Invalid number (mock)"
     },
     {
         "phone_number": "+15635564321",
         "national_format": "(563) 556-4321",
         "country_code": "15",
-        "carrier": "Sprint",
-        "line_type": "mobile",
+        "carrier": "Verizon",
+        "line_type": "landline",
         "valid": true
     },
     {
         "phone_number": "+13372245843",
         "national_format": "(337) 224-5843",
         "country_code": "13",
-        "carrier": "Verizon",
+        "carrier": "Sprint",
         "line_type": "mobile",
         "valid": true
     },
@@ -103,14 +103,17 @@
         "phone_number": "+12082843631",
         "national_format": "(208) 284-3631",
         "country_code": "12",
-        "carrier": "AT&T",
-        "line_type": "voip",
+        "carrier": "Verizon",
+        "line_type": "mobile",
         "valid": true
     },
     {
         "phone_number": "+13363123527",
-        "valid": false,
-        "error": "Invalid number (mock)"
+        "national_format": "(336) 312-3527",
+        "country_code": "13",
+        "carrier": "AT&T",
+        "line_type": "landline",
+        "valid": true
     },
     {
         "phone_number": "+13076304653",
@@ -121,7 +124,7 @@
         "phone_number": "+12602411535",
         "national_format": "(260) 241-1535",
         "country_code": "12",
-        "carrier": "MockCarrier",
+        "carrier": "T-Mobile",
         "line_type": "mobile",
         "valid": true
     },
@@ -129,7 +132,7 @@
         "phone_number": "+12089896125",
         "national_format": "(208) 989-6125",
         "country_code": "12",
-        "carrier": "Vodafone",
+        "carrier": "Verizon",
         "line_type": "landline",
         "valid": true
     },
@@ -142,7 +145,7 @@
         "phone_number": "+12286698327",
         "national_format": "(228) 669-8327",
         "country_code": "12",
-        "carrier": "Verizon",
+        "carrier": "AT&T",
         "line_type": "voip",
         "valid": true
     },
@@ -150,8 +153,8 @@
         "phone_number": "+16086281506",
         "national_format": "(608) 628-1506",
         "country_code": "16",
-        "carrier": "Verizon",
-        "line_type": "landline",
+        "carrier": "MockCarrier",
+        "line_type": "voip",
         "valid": true
     }
 ]

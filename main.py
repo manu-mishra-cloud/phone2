@@ -1,5 +1,5 @@
 from utils import get_recipients, clear_results
-from twilio_validator import validate_number   # or mock_validator
+from twilio_validator import validate_number 
 from result_writer import initialize_results, save_results_batch
 
 BATCH_SIZE = 500  # adjust based on memory/API limits
